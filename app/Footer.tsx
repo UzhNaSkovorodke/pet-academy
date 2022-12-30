@@ -1,8 +1,8 @@
-import React from 'react'
+import * as React from 'react'
 
-type Props = {}
+interface IFooterProps {}
 
-const Footer = (props: Props) => {
+const Footer: React.FunctionComponent<IFooterProps> = (props) => {
 	return <div>Footer</div>
 }
 
