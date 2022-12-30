@@ -10,15 +10,17 @@ const Header: React.FunctionComponent<IHeaderProps> = (props) => {
 		<>
 			<div className="flex justify-between my-12">
 				<div className="flex justify-items-center">
-					<Image
-						src="logoIcon.svg"
-						alt="there is a image"
-						height={65}
-						width={65}
-					></Image>
+					<div>
+						<Image
+							src="logoIcon.svg"
+							alt="there is a image"
+							height={65}
+							width={65}
+						/>
+					</div>
 					<div className="ml-4">
-						<h1 className="font-extrabold text-4xl">sans</h1>
-						<h2 className="font-medium text-2xl ">academy</h2>
+						<p className="font-extrabold text-4xl">sans</p>
+						<p className="font-medium text-2xl ">academy</p>
 					</div>
 				</div>
 				<CButton type="primary" text="Contact us" />

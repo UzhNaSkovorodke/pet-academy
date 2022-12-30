@@ -7,10 +7,17 @@ type Props = {}
 
 const page = (props: Props) => {
 	return (
-		<div className="mx-64">
+		<div className="mx-72">
 			<Header />
 			<main>
-				<div>Ttile</div>
+				<div className="py-36">
+					<h2 className="text-center text-1xl font-bold">
+						ДЕЛАЕМ ОБУЧЕНИЕ ДОСТУПНЕЕ
+					</h2>
+					<h1 className="text-center align-middle font-bold text-7xl px-32">
+						Получите сложные знания легко и просто!
+					</h1>
+				</div>
 				<div>Two side component text-image</div>
 				<div>grid icons</div>
 				<hr />
