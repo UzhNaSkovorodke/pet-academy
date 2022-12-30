@@ -1,14 +1,27 @@
-import Link from 'next/link'
-import React from 'react'
+import Image from 'next/image'
+import * as React from 'react'
 
-type Props = {}
+import CButton from '@/components/CButtons/CButton'
 
-const Header = (props: Props) => {
+interface IHeaderProps {}
+
+const Header: React.FunctionComponent<IHeaderProps> = (props) => {
 	return (
 		<>
 			<div className="flex justify-between my-12">
-				<Link href="/">Главная</Link>
-				<button>Contact us</button>
+				<div className="flex justify-items-center">
+					<Image
+						src="logoIcon.svg"
+						alt="there is a image"
+						height={65}
+						width={65}
+					></Image>
+					<div className="ml-4">
+						<h1 className="font-extrabold text-4xl">sans</h1>
+						<h2 className="font-medium text-2xl ">academy</h2>
+					</div>
+				</div>
+				<CButton type="primary" text="Contact us" />
 			</div>
 		</>
 	)
