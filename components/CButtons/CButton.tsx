@@ -1,7 +1,4 @@
-import Image from 'next/image'
 import React from 'react'
-
-import Mail from '../../assets/icons/mail.svg'
 
 import './CButton.css'
 
@@ -17,12 +14,7 @@ const CButton: React.FC<Props> = ({ text, type = 'primary', onClick }) => (
 		className={` text-base p-4 h-12 btn ${type}`}
 		type="button"
 	>
-		<div className="flex">
-			<div className="pr-4">
-				<Mail />
-			</div>
-			{text}
-		</div>
+		<div className="flex">{text}</div>
 	</button>
 )
 
