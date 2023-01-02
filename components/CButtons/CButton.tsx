@@ -9,12 +9,8 @@ interface Props {
 }
 
 const CButton: React.FC<Props> = ({ text, type = 'primary', onClick }) => (
-	<button
-		onClick={onClick}
-		className={` text-base p-4 h-12 btn ${type}`}
-		type="button"
-	>
-		<div className="flex">{text}</div>
+	<button onClick={onClick} className={` text-sm btn ${type}`} type="button">
+		{text}
 	</button>
 )
 

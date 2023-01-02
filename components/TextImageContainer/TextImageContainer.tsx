@@ -14,14 +14,14 @@ const TextImageContainer: React.FunctionComponent<ITextImageContainerProps> = ({
 	return (
 		<>
 			{type === 'imgtext' ? (
-				<div className="flex justify-between items-center py-16">
-					<div className="w-6/12 text-2xl font-normal">{text}</div>
-					<div className="w-6/12">{image}</div>
+				<div className="flex flex-wrap justify-between items-center py-16">
+					<div className="w-1/2 text-2xl font-normal">{text}</div>
+					<div className="w-1/2">{image}</div>
 				</div>
 			) : (
-				<div className="flex justify-between items-center py-16">
-					<div className="w-6/12">{image}</div>
-					<div className="w-6/12 text-2xl font-normal">{text}</div>
+				<div className="flex flex-wrap justify-between items-center py-16">
+					<div className="w-1/2">{image}</div>
+					<div className="w-1/2 text-2xl font-normal">{text}</div>
 				</div>
 			)}
 		</>
