@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import * as React from 'react'
 
-import CButton from '@/components/CButtons/CButton'
+import Mail from '@/assets/icons/mail.svg'
 
 interface IHeaderProps {}
 
@@ -23,7 +23,17 @@ const Header: React.FunctionComponent<IHeaderProps> = (props) => {
 						<p className="font-medium text-2xl ">academy</p>
 					</div>
 				</div>
-				<CButton type="primary" text="Contact us" />
+
+				<div>
+					<button className=" bg-indigo-700 hover:bg-indigo-900 text-white py-4 px-4 rounded-md font-bold inline-block">
+						<div className="flex">
+							<div className="pr-4">
+								<Mail />
+							</div>
+							Contact us
+						</div>
+					</button>
+				</div>
 			</div>
 		</>
 	)
