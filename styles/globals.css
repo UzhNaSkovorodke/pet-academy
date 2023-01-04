@@ -12,6 +12,7 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+
 *:focus,
 input:focus {
 	outline: solid 1px lightgrey;

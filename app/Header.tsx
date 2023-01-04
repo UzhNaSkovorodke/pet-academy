@@ -14,13 +14,17 @@ const Header: React.FunctionComponent<IHeaderProps> = (props) => {
 						<Image
 							src="logoIcon.svg"
 							alt="there is a image"
-							height={65}
-							width={65}
+							height={55}
+							width={55}
 						/>
 					</div>
-					<div className="ml-4">
-						<p className="font-extrabold text-4xl">sans</p>
-						<p className="font-medium text-2xl ">academy</p>
+					<div className="ml-2 tablet:ml-2 laptop:ml-2 desktop:ml-4">
+						<p className="font-extrabold text-3xl tablet:text-base laptop:text-3xl desktop:text-3xl">
+							quartz
+						</p>
+						<p className="font-medium text-base tablet:text-base laptop:text-base desktop:text-2xl">
+							academy
+						</p>
 					</div>
 				</div>
 
