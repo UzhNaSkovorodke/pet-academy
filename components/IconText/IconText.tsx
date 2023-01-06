@@ -18,8 +18,12 @@ const IconText: React.FunctionComponent<IIconTextProps> = ({
 				{image}
 			</div>
 
-			<p className="font-bold text-2xl pt-16 pb-4 pr-1">{title}</p>
-			<p className="text-stone-500 font-normal pr-10">{subtitle}</p>
+			<p className="font-bold text-lg tablet:text-base laptop:text-base desktop:text-2xl pt-16 pb-4 pr-1">
+				{title}
+			</p>
+			<p className="text-stone-500 font-normal text-base tablet:text-sm laptop:text-sm desktop:text-base pr-10">
+				{subtitle}
+			</p>
 		</div>
 	)
 }
