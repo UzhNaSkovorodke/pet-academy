@@ -32,7 +32,7 @@ const TitleSection: React.FunctionComponent<ITitleSection> = (props) => {
 					</div>
 				}
 				text="Мы команда преподавателей со стажем уже более 8 лет в разных сферах. Создание интересных обучающих материалов это наше призвание."
-				type="imgtext"
+				type="textimg"
 			/>
 			<div className="flex flex-wrap justify-evenly">
 				<IconText
