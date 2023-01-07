@@ -2,8 +2,8 @@
 	@apply font-bold inline-block;
 }
 .primary {
-	@apply bg-indigo-700 hover:bg-indigo-900 text-white text-base m-2 py-2 px-4 rounded-md;
+	@apply bg-indigo-700 hover:bg-indigo-900 text-white text-base m-2 py-2 px-4 tablet:px-2 laptop:px-4 desktop:px-6 rounded-md;
 }
 .secondary {
-	@apply bg-indigo-100 hover:bg-indigo-200 text-violet-600 h-auto  text-base m-2 py-2 px-2 tablet:px-2 laptop:px-2 desktop:px-4 rounded-md;
+	@apply bg-indigo-100 hover:bg-indigo-200 text-violet-600 h-auto  text-base m-2 py-2 px-4 tablet:px-2 laptop:px-4 desktop:px-6 rounded-md;
 }

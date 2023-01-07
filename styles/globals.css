@@ -17,3 +17,6 @@ a {
 input:focus {
 	outline: solid 1px lightgrey;
 }
+img {
+	height: auto;
+}
