@@ -8,16 +8,15 @@ interface IHeaderProps {}
 const Header: React.FunctionComponent<IHeaderProps> = (props) => {
 	return (
 		<>
-			<div className="flex justify-between my-12">
+			<div className="flex justify-between py-12">
 				<div className="flex justify-items-center">
-					<div>
-						<Image
-							src="logoIcon.svg"
-							alt="there is a image"
-							height={55}
-							width={55}
-						/>
-					</div>
+					<Image
+						src="logoIcon.svg"
+						alt="there is a image"
+						height={55}
+						width={55}
+					/>
+
 					<div className="ml-2 tablet:ml-2 laptop:ml-2 desktop:ml-4">
 						<p className="font-extrabold text-3xl tablet:text-base laptop:text-3xl desktop:text-3xl">
 							quartz
@@ -34,7 +33,7 @@ const Header: React.FunctionComponent<IHeaderProps> = (props) => {
 							<div className="pr-4">
 								<Mail />
 							</div>
-							Contact us
+							Напиши нам
 						</div>
 					</button>
 				</div>

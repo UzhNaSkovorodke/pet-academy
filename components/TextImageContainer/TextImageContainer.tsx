@@ -14,17 +14,17 @@ const TextImageContainer: React.FunctionComponent<ITextImageContainerProps> = ({
 	return (
 		<>
 			{type === 'textimg' ? (
-				<div className="flex flex-wrap justify-between items-center py-16">
-					<div className="w-1/2 text-base tablet:text-base laptop:text-lg desktop:text-lg font-normal">
+				<div className="flex justify-between items-center py-16">
+					<div className="w-1/2 text-base tablet:text-base laptop:text-lg desktop:text-2xl font-normal">
 						{text}
 					</div>
 
-					<div className="w-1/2">{image}</div>
+					<div className="">{image}</div>
 				</div>
 			) : (
-				<div className="flex flex-wrap justify-between items-center py-16">
-					<div className="w-1/2">{image}</div>
-					<div className="w-1/2 text-base tablet:text-base laptop:text-lg desktop:text-lg font-normal">
+				<div className="flex justify-between items-center py-16">
+					<div className="">{image}</div>
+					<div className="w-1/2 text-base tablet:text-base laptop:text-lg desktop:text-2xl font-normal">
 						{text}
 					</div>
 				</div>

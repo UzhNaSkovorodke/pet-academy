@@ -18,10 +18,10 @@ const TitleSection: React.FunctionComponent<ITitleSection> = (props) => {
 	return (
 		<div>
 			<div className="py-40 tablet:py-40 laptop:py-40 desktop:py-48">
-				<h2 className="text-center text-1xl font-bold pb-8">
+				<h2 className="text-center text-base tablet:text-base laptop:text-lg desktop:text-2xl font-bold pb-8">
 					ДЕЛАЕМ ОБУЧЕНИЕ ДОСТУПНЕЕ
 				</h2>
-				<h1 className="text-center align-middle font-bold text-lg tablet:text-3xl laptop:text-4xl desktop:text-5xl px-32">
+				<h1 className="text-center font-bold text-lg tablet:text-3xl laptop:text-4xl desktop:text-5xl px-28">
 					Обучайтесь сложным знаниям легко и просто!
 				</h1>
 			</div>
@@ -37,35 +37,53 @@ const TitleSection: React.FunctionComponent<ITitleSection> = (props) => {
 			<div className="flex flex-wrap justify-evenly">
 				<IconText
 					image={
-						<Image src={english} width={50} height={50} alt="englishIcon" />
+						<Image
+							src={english}
+							width={50}
+							height={50}
+							alt="иконка английского"
+						/>
 					}
 					title="Английский"
 					subtitle="Составим программу обучения, исходя из ваших интересов, актуальных тем под ваши цели."
 				/>
 				<IconText
-					image={<Image src={math} width={50} height={50} alt="math" />}
+					image={
+						<Image src={math} width={50} height={50} alt="иконка математики" />
+					}
 					title="Математика"
 					subtitle="Объёмное обучение, содержащее курсы подготовки к ЕГЭ по математике и олимпиадам."
 				/>
 				<IconText
-					image={<Image src={code} width={50} height={50} alt="studymans" />}
+					image={
+						<Image
+							src={code}
+							width={50}
+							height={50}
+							alt="иконка программирования"
+						/>
+					}
 					title="Программирование"
 					subtitle="Станьте разработчиком! Освойте базу программирование на выбранном вами языке."
 				/>
 				<IconText
-					image={<Image src={laywer} width={50} height={50} alt="laywer" />}
+					image={
+						<Image src={laywer} width={50} height={50} alt="иконка права" />
+					}
 					title="Право"
 					subtitle="Все темы по праву, задачи по гражданству РФ и ТК РФ, правовое регулирование и т.д"
 				/>
 				<IconText
 					image={
-						<Image src={chemistry} width={50} height={50} alt="chemistry" />
+						<Image src={chemistry} width={50} height={50} alt="иконка химии" />
 					}
 					title="Химия"
 					subtitle="Химические реакции, свойства веществ, расчеты масс и эффектов в понятном индивидуальном материале"
 				/>
 				<IconText
-					image={<Image src={biology} width={50} height={50} alt="biology" />}
+					image={
+						<Image src={biology} width={50} height={50} alt="иконка биологии" />
+					}
 					title="Биология"
 					subtitle="Вся база по биологии. Тесты, конспекты и простое объяснение сложных тем."
 				/>
