@@ -1,27 +1,24 @@
 import Image from 'next/image'
 import * as React from 'react'
 
-import Mail from '@/assets/icons/mail.svg'
 import face1 from '@/assets/images/face1.png'
 import face2 from '@/assets/images/face2.png'
 import forfriends from '@/assets/images/forfriends.png'
+import mail from '@/assets/images/mail.png'
 
-interface IReviewsProps {}
+interface IReviewsSectionProps {}
 
-const Reviews: React.FunctionComponent<IReviewsProps> = (props) => {
+const ReviewsSection: React.FunctionComponent<IReviewsSectionProps> = (
+	props
+) => {
 	return (
 		<>
 			<div className="flex flex-wrap justify-between items-center py-16">
-				<div className="pl-2 flex justify-center rounded-lg drop-shadow-2xl">
-					<Image
-						src={forfriends}
-						priority={true}
-						width={400}
-						height={400}
-						alt="forfriends"
-					/>
+				<div className="w-1/3 h-auto flex justify-center rounded-lg drop-shadow-2xl px-10 ">
+					<Image src={forfriends} priority={true} alt="forfriends" />
 				</div>
-				<div className="px-4 w-1/2 text-base tablet:text-base laptop:text-lg desktop:text-lg font-normal">
+
+				<div className="pl-8 w-2/3 text-base tablet:text-base laptop:text-lg desktop:text-lg font-normal">
 					<p className="font-normal text-center text-lg tablet:text-lg laptop:text-lg desktop:text-2xl">
 						За каждого приведённого ученика заплатим Вам 2000₽
 					</p>
@@ -45,8 +42,8 @@ const Reviews: React.FunctionComponent<IReviewsProps> = (props) => {
 			</div>
 
 			<div className="flex flex-wrap justify-between items-center py-16">
-				<div className="w-1/4 flex justify-center drop-shadow-2xl">
-					<Image src={face1} width={275} height={275} alt="лицо ученика" />
+				<div className="w-1/4 h-auto flex justify-center drop-shadow-2xl px-10">
+					<Image className="rounded-lg" src={face1} alt="лицо ученика" />
 				</div>
 
 				<div className="pl-8 w-3/4 text-base tablet:text-base laptop:text-lg desktop:text-lg font-normal">
@@ -68,8 +65,8 @@ const Reviews: React.FunctionComponent<IReviewsProps> = (props) => {
 			</div>
 
 			<div className="flex flex-wrap justify-between items-center py-10">
-				<div className="w-1/4 flex justify-center drop-shadow-2xl">
-					<Image src={face2} width={275} height={275} alt="лицо ученика" />
+				<div className="w-1/4 h-auto flex justify-center drop-shadow-2xl px-10">
+					<Image className="rounded-lg" src={face2} alt="лицо ученика" />
 				</div>
 
 				<div className="pl-8 w-3/4 text-base tablet:text-base laptop:text-lg desktop:text-lg font-normal">
@@ -90,7 +87,7 @@ const Reviews: React.FunctionComponent<IReviewsProps> = (props) => {
 				</div>
 			</div>
 
-			<p className="text-center font-bold text-lg tablet:text-3xl laptop:text-4xl desktop:text-5xl pb-8 pt-30 tablet:pt-30 laptop:pt-30 desktop:pt-48">
+			<p className="text-center font-bold text-lg tablet:text-3xl laptop:text-4xl desktop:text-5xl pb-8 pt-48">
 				Готов обучаться с нами? Напиши нам.
 			</p>
 			<p className="text-center text-gray-500 text-lg tablet:text-lg laptop:text-2xl desktop:text-2xl pb-10">
@@ -102,9 +99,9 @@ const Reviews: React.FunctionComponent<IReviewsProps> = (props) => {
 				<button className=" bg-indigo-700 hover:bg-indigo-900 text-white rounded-md font-bold">
 					<div className="flex  py-4 px-4">
 						<div className="pr-4">
-							<Mail />
+							<Image src={mail} width={30} height={30} alt="" />
 						</div>
-						Напиши нам
+						<p className="flex items-center"> Напиши нам</p>
 					</div>
 				</button>
 			</div>
@@ -112,4 +109,4 @@ const Reviews: React.FunctionComponent<IReviewsProps> = (props) => {
 	)
 }
 
-export default Reviews
+export default ReviewsSection

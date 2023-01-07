@@ -2,6 +2,7 @@ import Image from 'next/image'
 import * as React from 'react'
 
 import gmail from '@/assets/images/gmail.png'
+import logoicon from '@/assets/images/logoicon.png'
 import telegram from '@/assets/images/telegram.png'
 import whatsapp from '@/assets/images/whatsapp.png'
 import youtube from '@/assets/images/youtube.png'
@@ -15,10 +16,10 @@ const Footer: React.FunctionComponent<IFooterProps> = (props) => {
 				<div className="flex justify-items-center">
 					<div>
 						<Image
-							src="logoIcon.svg"
+							src={logoicon}
 							alt="there is a image"
-							height={55}
-							width={55}
+							height={60}
+							width={60}
 						/>
 					</div>
 					<div className="ml-2 tablet:ml-2 laptop:ml-2 desktop:ml-4">

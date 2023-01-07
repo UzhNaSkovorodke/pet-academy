@@ -2,7 +2,6 @@ import Image from 'next/image'
 import * as React from 'react'
 
 import IconText from '@/components/IconText/IconText'
-import TextImageContainer from '@/components/TextImageContainer/TextImageContainer'
 
 import biology from '@/assets/images/biology.png'
 import chemistry from '@/assets/images/chemistry.png'
@@ -25,15 +24,18 @@ const TitleSection: React.FunctionComponent<ITitleSection> = (props) => {
 					Обучайтесь сложным знаниям легко и просто!
 				</h1>
 			</div>
-			<TextImageContainer
-				image={
-					<div className="flex flex-wrap justify-center">
-						<Image src={studymans} width={450} height={450} alt="studymans" />
-					</div>
-				}
-				text="Мы команда преподавателей со стажем уже более 8 лет в разных сферах. Создание интересных обучающих материалов это наше призвание."
-				type="textimg"
-			/>
+
+			<div className="flex justify-between items-center py-16">
+				<div className="text-base tablet:text-base laptop:text-lg desktop:text-2xl font-normal mr-10">
+					Мы команда преподавателей со стажем уже более 8 лет в разных сферах.
+					Создание интересных обучающих материалов это наше призвание.
+				</div>
+
+				<div className="w-1/2 h-auto flex flex-wrap justify-center">
+					<Image src={studymans} alt="studymans" />
+				</div>
+			</div>
+
 			<div className="flex flex-wrap justify-evenly">
 				<IconText
 					image={

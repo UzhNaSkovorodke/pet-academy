@@ -47,12 +47,12 @@ const BenefitsSection: React.FunctionComponent<
 			<h2 className="text-center text-base tablet:text-2xl laptop:text-3xl desktop:text-3xl font-bold py-28 tablet:pb-8 laptop:pb-10 desktop:pb-28">
 				Наши преимущества
 			</h2>
-			<p className="font-bold text-lg tablet:text-2xl laptop:text-3xl desktop:text-3xl">
+			<p className="font-bold text-lg tablet:text-2xl laptop:text-3xl desktop:text-3xl pt-20">
 				Особый подход
 			</p>
 
 			<div className="flex flex-wrap justify-between items-center">
-				<p className="w-1/2 py-12 font-normal text-lg ">
+				<p className="w-1/2 py-10 font-normal text-lg ">
 					Мы имеем опыт работы в передовых компаниях: Яндекс, Huawei, Сбербанк,
 					Тинькофф и др. Подскажем и поможем с самоопределением и
 					профориентацией.
@@ -71,38 +71,35 @@ const BenefitsSection: React.FunctionComponent<
 				</div>
 			</div>
 
-			<div className="flex flex-wrap justify-between items-center py-16 ">
-				<div className="w-1/2 flex flex-wrap p-2 justify-center drop-shadow-2xl hover:scale-110 duration-300 z-10">
-					<Image src={benefits4} width={650} height={650} alt="фото компаний" />
+			<div className="flex flex-wrap justify-between items-center py-16 px-20">
+				<div className="w-1/2 h-auto flex flex-wrap p-2 justify-center drop-shadow-2xl hover:scale-110 duration-300 z-10 hover:z-20">
+					<Image className="rounded-lg" src={benefits4} alt="фото компаний" />
 				</div>
 				<div className="w-1/2 flex flex-wrap p-2 justify-center drop-shadow-2xl hover:scale-110 duration-300 z-10">
 					<Image
+						className="rounded-lg"
 						src={benefits3}
-						width={650}
-						height={650}
 						alt="фото с конференции"
 					/>
 				</div>
-				<div className="w-1/2 flex flex-wrap p-2 justify-center drop-shadow-2xl hover:scale-110 duration-300 z-10">
+				<div className="w-1/2 flex flex-wrap p-2 justify-center drop-shadow-2xl hover:scale-110 duration-300 hover:z-20">
 					<Image
+						className="rounded-lg"
 						src={benefits2}
-						width={650}
-						height={650}
 						alt="пример взаимодействия с учеником"
 					/>
 				</div>
 				<div className="w-1/2 flex flex-wrap p-2 justify-center drop-shadow-2xl hover:scale-110 duration-300 z-10">
 					<Image
+						className="rounded-lg"
 						src={benefits1}
-						width={650}
-						height={650}
 						alt="общение с учеником"
 					/>
 				</div>
 			</div>
 
 			<div className="flex flex-wrap justify-between items-center py-16">
-				<div className="pr-4 w-2/3 text-base tablet:text-base laptop:text-lg desktop:text-lg font-normal">
+				<div className="pr-6 w-3/4 text-base tablet:text-base laptop:text-lg desktop:text-lg font-normal">
 					<p className="font-bold text-lg tablet:text-2xl laptop:text-3xl desktop:text-3xl">
 						Постоянная готовность
 					</p>
@@ -121,8 +118,8 @@ const BenefitsSection: React.FunctionComponent<
 						<CButton type="primary" text="Записаться на бесплатный урок" />
 					</div>
 				</div>
-				<div className="pl-2 flex justify-center drop-shadow-2xl hover:scale-110 duration-300 z-10">
-					<Image src={dialog} width={300} height={300} alt="dialog" />
+				<div className="pl-2 w-1/4 px-10 h-auto flex justify-center drop-shadow-2xl hover:scale-110 duration-300 z-10">
+					<Image src={dialog} priority={true} alt="dialog" />
 				</div>
 			</div>
 		</>
