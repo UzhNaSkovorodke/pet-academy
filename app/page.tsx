@@ -5,7 +5,6 @@ import Footer from './Footer'
 import Header from './Header'
 import ReviewsSection from './ReviewsSection'
 import TitleSection from './TitleSection'
-import Fetch from './fetch'
 
 type Props = {}
 
@@ -19,7 +18,6 @@ const page = (props: Props) => {
 				<TitleSection />
 				<BenefitsSection />
 				<ReviewsSection />
-				<Fetch />
 			</main>
 			<footer>
 				<Footer />
