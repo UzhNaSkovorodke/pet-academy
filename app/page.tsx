@@ -14,11 +14,13 @@ const page = (props: Props) => {
 			<header>
 				<Header />
 			</header>
+
 			<main>
 				<TitleSection />
 				<BenefitsSection />
 				<ReviewsSection />
 			</main>
+
 			<footer>
 				<Footer />
 			</footer>
