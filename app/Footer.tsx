@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import * as React from 'react'
 
 import gmail from '@/assets/images/gmail.png'
@@ -33,42 +34,55 @@ const Footer: React.FunctionComponent<IFooterProps> = (props) => {
 				</div>
 
 				<div className="flex justify-evenly">
-					<div className="pr-4 cursor-pointer">
-						<Image
-							src={telegram}
-							alt="there is a image"
-							height={45}
-							width={45}
-						/>
-					</div>
-					<div className="pr-4 cursor-pointer">
-						<Image
-							src={youtube}
-							alt="there is a image"
-							height={45}
-							width={45}
-						/>
-					</div>
-					<div className="pr-4 cursor-pointer">
-						<Image
-							src={whatsapp}
-							alt="there is a image"
-							height={45}
-							width={45}
-						/>
-					</div>
+					<Link href={'/posts'}>
+						<div className="pr-4 cursor-pointer">
+							<Image
+								src={telegram}
+								alt="there is a image"
+								height={45}
+								width={45}
+							/>
+						</div>
+					</Link>
+					<Link href={'/posts'}>
+						<div className="pr-4 cursor-pointer">
+							<Image
+								src={youtube}
+								alt="there is a image"
+								height={45}
+								width={45}
+							/>
+						</div>
+					</Link>
+					<Link href={'/posts'}>
+						<div className="pr-4 cursor-pointer">
+							<Image
+								src={whatsapp}
+								alt="there is a image"
+								height={45}
+								width={45}
+							/>
+						</div>
+					</Link>
 				</div>
 			</div>
 			<div className="pb-16 flex justify-between items-center">
 				<p className="text-base">© 2021 qartz academy. All Rights Reserved.</p>
-				<div className="flex justify-evenly">
-					<div className="pr-2 cursor-pointer">
-						<Image src={gmail} alt="there is a image" height={45} width={45} />
+				<Link href={'/posts'}>
+					<div className="flex justify-evenly">
+						<div className="pr-2 cursor-pointer">
+							<Image
+								src={gmail}
+								alt="there is a image"
+								height={45}
+								width={45}
+							/>
+						</div>
+						<p className="flex items-center font-semibold">
+							info@academy-qartz.ru
+						</p>
 					</div>
-					<p className="flex items-center font-semibold">
-						info@academy-qartz.ru
-					</p>
-				</div>
+				</Link>
 			</div>
 		</>
 	)

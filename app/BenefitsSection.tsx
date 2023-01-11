@@ -61,7 +61,7 @@ const BenefitsSection: React.FunctionComponent<
 					<div className="w-full flex justify-evenly">
 						<CButton text="Математика" type="secondary" />
 						<CButton text="Английский" type="secondary" />
-						<CButton text="Физика" type="secondary" />
+						<CButton text="Программирование" type="secondary" />
 					</div>
 					<div className="w-full flex justify-evenly">
 						<CButton text="Биология" type="secondary" />

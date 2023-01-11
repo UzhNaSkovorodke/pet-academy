@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import * as React from 'react'
 
 import face1 from '@/assets/images/face1.png'
@@ -97,12 +98,14 @@ const ReviewsSection: React.FunctionComponent<IReviewsSectionProps> = (
 
 			<div className="mb-30 tablet:mb-30 lambop:mb-30 desktop:mb-48 flex justify-center">
 				<button className=" bg-indigo-700 hover:bg-indigo-900 text-white rounded-md font-bold">
-					<div className="flex  py-4 px-4">
-						<div className="pr-4">
-							<Image src={mail} width={30} height={30} alt="" />
+					<Link href={'/posts'}>
+						<div className="flex  py-4 px-4">
+							<div className="pr-4">
+								<Image src={mail} width={30} height={30} alt="" />
+							</div>
+							<p className="flex items-center"> Напиши нам</p>
 						</div>
-						<p className="flex items-center"> Напиши нам</p>
-					</div>
+					</Link>
 				</button>
 			</div>
 		</>

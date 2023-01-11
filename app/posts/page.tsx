@@ -5,7 +5,7 @@ type Props = {}
 const PostComponent = (props: Props) => {
 	return (
 		<>
-			<p>PostComponent</p>
+			<p>Напиши нам</p>
 		</>
 	)
 }
