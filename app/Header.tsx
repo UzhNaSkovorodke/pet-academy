@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import * as React from 'react'
 
 import logoicon from '@/assets/images/logoicon.png'
@@ -32,12 +33,14 @@ const Header: React.FunctionComponent<IHeaderProps> = (props) => {
 
 				<div>
 					<button className=" bg-indigo-700 hover:bg-indigo-900 text-white py-4 px-4 rounded-md font-bold inline-block">
-						<div className="flex">
-							<div className="pr-4">
-								<Image src={mail} width={30} height={30} alt="" />
+						<Link href={'/posts'}>
+							<div className="flex">
+								<div className="pr-4">
+									<Image src={mail} width={30} height={30} alt="" />
+								</div>
+								<p className="flex items-center"> Напиши нам</p>
 							</div>
-							<p className="flex items-center"> Напиши нам</p>
-						</div>
+						</Link>
 					</button>
 				</div>
 			</div>

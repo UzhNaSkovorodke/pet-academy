@@ -1,7 +1,6 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import * as React from 'react'
-
-import IconText from '@/components/IconText/IconText'
 
 import biology from '@/assets/images/biology.png'
 import chemistry from '@/assets/images/chemistry.png'
@@ -37,58 +36,143 @@ const TitleSection: React.FunctionComponent<ITitleSection> = (props) => {
 			</div>
 
 			<div className="flex flex-wrap justify-evenly">
-				<IconText
-					image={
-						<Image
-							src={english}
-							width={50}
-							height={50}
-							alt="иконка английского"
-						/>
-					}
-					title="Английский"
-					subtitle="Составим программу обучения, исходя из ваших интересов, актуальных тем под ваши цели."
-				/>
-				<IconText
-					image={
-						<Image src={math} width={50} height={50} alt="иконка математики" />
-					}
-					title="Математика"
-					subtitle="Объёмное обучение, содержащее курсы подготовки к ЕГЭ по математике и олимпиадам."
-				/>
-				<IconText
-					image={
-						<Image
-							src={code}
-							width={50}
-							height={50}
-							alt="иконка программирования"
-						/>
-					}
-					title="Программирование"
-					subtitle="Станьте разработчиком! Освойте базу программирование на выбранном вами языке."
-				/>
-				<IconText
-					image={
-						<Image src={laywer} width={50} height={50} alt="иконка права" />
-					}
-					title="Право"
-					subtitle="Все темы по праву, задачи по гражданству РФ и ТК РФ, правовое регулирование и т.д"
-				/>
-				<IconText
-					image={
-						<Image src={chemistry} width={50} height={50} alt="иконка химии" />
-					}
-					title="Химия"
-					subtitle="Химические реакции, свойства веществ, расчеты масс и эффектов в понятном индивидуальном материале"
-				/>
-				<IconText
-					image={
-						<Image src={biology} width={50} height={50} alt="иконка биологии" />
-					}
-					title="Биология"
-					subtitle="Вся база по биологии. Тесты, конспекты и простое объяснение сложных тем."
-				/>
+				<div className="w-4/12 py-16 relative">
+					<div className="bg-white w-16 h-16 absolute bottom-0 top-8 z-0 left-0 rounded-lg drop-shadow-2xl" />
+					<Link href={'/posts'}>
+						<div className="absolute z-10 bottom-0 top-10 left-2 right-0">
+							<Image
+								className="cursor-pointer hover:scale-105"
+								src={english}
+								width={50}
+								height={50}
+								alt="иконка английского"
+							/>
+						</div>
+					</Link>
+
+					<p className="font-bold text-lg tablet:text-base laptop:text-lg desktop:text-2xl pt-16 pb-4 pr-1">
+						Английский
+					</p>
+					<p className="text-stone-500 font-normal text-base tablet:text-sm laptop:text-base desktop:text-lg pr-10">
+						Составим программу обучения, исходя из ваших интересов, актуальных
+						тем под ваши цели.
+					</p>
+				</div>
+
+				<div className="w-4/12 py-16 relative">
+					<div className="bg-white w-16 h-16 absolute bottom-0 top-8 z-0 left-0 rounded-lg drop-shadow-2xl" />
+					<Link href={'/posts'}>
+						<div className="absolute z-10 bottom-0 top-10 left-2 right-0">
+							<Image
+								className="cursor-pointer hover:scale-105"
+								src={math}
+								width={50}
+								height={50}
+								alt="иконка математики"
+							/>
+						</div>
+					</Link>
+
+					<p className="font-bold text-lg tablet:text-base laptop:text-lg desktop:text-2xl pt-16 pb-4 pr-1">
+						Математика
+					</p>
+					<p className="text-stone-500 font-normal text-base tablet:text-sm laptop:text-base desktop:text-lg pr-10">
+						Объёмное обучение, содержащее курсы подготовки к ЕГЭ по математике и
+						олимпиадам.
+					</p>
+				</div>
+
+				<div className="w-4/12 py-16 relative">
+					<div className="bg-white w-16 h-16 absolute bottom-0 top-8 z-0 left-0 rounded-lg drop-shadow-2xl" />
+					<Link href={'/posts'}>
+						<div className="absolute z-10 bottom-0 top-10 left-2 right-0">
+							<Image
+								className="cursor-pointer hover:scale-105"
+								src={code}
+								width={50}
+								height={50}
+								alt="иконка программирования"
+							/>
+						</div>
+					</Link>
+
+					<p className="font-bold text-lg tablet:text-base laptop:text-lg desktop:text-2xl pt-16 pb-4 pr-1">
+						Программирование
+					</p>
+					<p className="text-stone-500 font-normal text-base tablet:text-sm laptop:text-base desktop:text-lg pr-10">
+						Станьте разработчиком! Освойте базу программирование на выбранном
+						вами языке.
+					</p>
+				</div>
+
+				<div className="w-4/12 py-16 relative">
+					<div className="bg-white w-16 h-16 absolute bottom-0 top-8 z-0 left-0 rounded-lg drop-shadow-2xl" />
+					<Link href={'/posts'}>
+						<div className="absolute z-10 bottom-0 top-10 left-2 right-0">
+							<Image
+								src={laywer}
+								width={50}
+								className="cursor-pointer hover:scale-105"
+								height={50}
+								alt="иконка права"
+							/>
+						</div>
+					</Link>
+
+					<p className="font-bold text-lg tablet:text-base laptop:text-lg desktop:text-2xl pt-16 pb-4 pr-1">
+						Право
+					</p>
+					<p className="text-stone-500 font-normal text-base tablet:text-sm laptop:text-base desktop:text-lg pr-10">
+						Все темы по праву, задачи по гражданству РФ и ТК РФ, правовое
+						регулирование и т.д
+					</p>
+				</div>
+
+				<div className="w-4/12 py-16 relative">
+					<div className="bg-white w-16 h-16 absolute bottom-0 top-8 z-0 left-0 rounded-lg drop-shadow-2xl" />
+					<Link href={'/posts'}>
+						<div className="absolute z-10 bottom-0 top-10 left-2 right-0">
+							<Image
+								className="cursor-pointer hover:scale-105"
+								src={chemistry}
+								width={50}
+								height={50}
+								alt="иконка химии"
+							/>
+						</div>
+					</Link>
+
+					<p className="font-bold text-lg tablet:text-base laptop:text-lg desktop:text-2xl pt-16 pb-4 pr-1">
+						Химия
+					</p>
+					<p className="text-stone-500 font-normal text-base tablet:text-sm laptop:text-base desktop:text-lg pr-10">
+						Химические реакции, свойства веществ, расчеты масс и эффектов в
+						понятном индивидуальном материале
+					</p>
+				</div>
+
+				<div className="w-4/12 py-16 relative">
+					<div className="bg-white w-16 h-16 absolute bottom-0 top-8 z-0 left-0 rounded-lg drop-shadow-2xl" />
+					<Link href={'/posts'}>
+						<div className="absolute z-10 bottom-0 top-10 left-2 right-0">
+							<Image
+								className="cursor-pointer hover:scale-105"
+								src={biology}
+								width={50}
+								height={50}
+								alt="иконка биологии"
+							/>
+						</div>
+					</Link>
+
+					<p className="font-bold text-lg tablet:text-base laptop:text-lg desktop:text-2xl pt-16 pb-4 pr-1">
+						Биология
+					</p>
+					<p className="text-stone-500 font-normal text-base tablet:text-sm laptop:text-base desktop:text-lg pr-10">
+						Вся база по биологии. Тесты, конспекты и простое объяснение сложных
+						тем.
+					</p>
+				</div>
 			</div>
 		</div>
 	)
